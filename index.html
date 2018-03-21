@@ -1,12 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="/assets/javascript/app.js"></script>
+    <title>Famous Trivia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Space+Mono:700" rel="stylesheet">
+
 </head>
+
 <body>
     
-    
+    <div class="parallax-container" id='parall'>
+        <section id="introSection">
+            <h1 class="center-align" id='header'>Famous Trivia</h1>
+            <div class="row" id="introCard">
+                <div class="col s6 offset-s3">
+                    <div class="center-align">
+                        <span>The Most Famous Trivia Questions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="buttonRow">
+                <div class="col s3 offset-s3 center-align">
+                    <a class="waves-effect waves-light btn-large btn-flat tooltipped" data-position="left" data-delay="50" data-tooltip="Click To Start."
+                        id="startButton">Start</a>
+                </div>
+                <div class="col s3 center-align">
+                    <a class="modal-trigger waves-effect waves-light btn-large btn-flat tooltipped" data-position="right" data-delay="50" data-tooltip="Click For Instructions."
+                        href="#instructionModal" id="instructionButton">Instructions</a>
+                </div>
+            </div>
+            <section id="questionFamous" class="container">
+                <div class="row">
+                    <div class="col s12 center-align" id="timer">
+                    </div>
+                </div>
+                <div class="row" id="messageSection">
+                    <div class="col s12" id="gameMessage">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="questionContainer" class="col s12 center-align">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="choices" class="col s8 offset-s2 center-align">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="parallax">
+            <img src="assets/images/venom art.jpg">
+        </div>
+
+    </div>
+
+
+    <div id="instructionModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h3>How To Play</h3>
+            <p>These are some of the most famous questions in the US, can you answer them.</p>
+            <p>
+                Press the START button and play through the quiz. After you're done, our computers will calculate your grade and let you
+                know how you did.
+            </p>
+            <div class="center-align">
+                <img src="assets/images/gollum.gif" id="instructionGIF">
+            </div>
+        </div>
+        <div class="modal-footer" id="instructionModalFooter">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat tooltipped" data-position="bottom" data-delay="50"
+                data-tooltip="I Get It Already." id="instructionConfirm">Ok</a>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Michael Todd 2018
+                <a class="grey-text text-lighten-4 right" href="https://github.com/mbtodd/TriviaGame.git" target="_blank">
+                    <i class="fa fa-github-square fa-2x" aria-hidden="true" id="gitIcon"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="assets/javascript/trivia.js"></script>
 </body>
+
 </html>
